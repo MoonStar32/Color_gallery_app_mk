@@ -1,20 +1,19 @@
 import 'package:color_gallery/ui/green.dart';
 import 'package:color_gallery/ui/pink.dart';
+import 'package:color_gallery/ui/red.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
-import 'ui/red.dart';
-
-void main() {
-  runApp(
-    const MaterialApp(
-      home: App(),
-    ),
-  );
-}
+void main() => runApp(
+      const MaterialApp(
+        home: App(),
+      ),
+    );
 
 class App extends StatefulWidget {
-  const App({super.key});
+  const App({
+    super.key,
+  });
 
   @override
   State<App> createState() => _AppState();
@@ -66,7 +65,7 @@ class _AppState extends State<App> {
       body: <Widget>[
         const PinlScreen(),
         const GreenScreen(),
-        const RedScreen(),
+        const RedDcreen(),
       ][_page],
     );
   }

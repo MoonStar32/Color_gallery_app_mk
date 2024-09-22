@@ -36,7 +36,9 @@ class _PinlScreenState extends State<PinlScreen> {
               max: 100,
               activeColor: Colors.redAccent,
               inactiveColor: Colors.white,
-              onChanged: (value) => setState(() => slideToObject = value),
+              onChanged: (value) => setState(
+                () => slideToObject = value,
+              ),
             ),
           ),
         ],
